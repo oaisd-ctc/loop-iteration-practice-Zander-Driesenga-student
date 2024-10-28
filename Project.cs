@@ -4,9 +4,10 @@ using System;
 public class Program
 
 {
+   int n;
    public static void Main(string[] args)
    {
-      Write1ThroughN_While(1);
+      Write1ThroughN_While(5);
       Write1ThroughN_For(0);
       WriteNThrough1_While(0);
       WriteNThrough1_For(0);
@@ -15,12 +16,19 @@ public class Program
       FindSumOfEvenNumbers(2);
       FindSumOfOddNumbers(1);
       OutputRightTriangle(6);
-
+   }
+   public static void OutOfRangeMessage()
+   {
+      n
    }
    public static void Write1ThroughN_While(int n)
    {
       int counter = 1;
-      while (counter < n)
+      if (n < 1)
+      {
+         OutOfRangeMessage();
+      }
+      while (counter <= n)
       {
          Console.WriteLine(counter);
          counter++;
