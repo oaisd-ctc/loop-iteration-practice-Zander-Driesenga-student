@@ -11,12 +11,16 @@ public class Program
       WriteNThrough1_While(0);
       WriteNThrough1_For(0);
       WriteEvensThrough100();
-      FindSum(1);
+      FindSum(100);
+      FindSumOfEvenNumbers(2);
+      FindSumOfOddNumbers(1);
+      OutputRightTriangle(6);
+
    }
    public static void Write1ThroughN_While(int n)
    {
       int counter = 1;
-        while (counter < n)
+      while (counter < n)
       {
          Console.WriteLine(counter);
          counter++;
@@ -32,7 +36,7 @@ public class Program
    public static void WriteNThrough1_While(int n)
    {
       int counter = 0;
-        while (counter < n)
+      while (counter < n)
       {
          Console.WriteLine(n);
          n--;
@@ -52,17 +56,113 @@ public class Program
          int evenNumber = i % 2;
          if (evenNumber == 0)
          {
-            Console.WriteLine();
+            Console.WriteLine(i);
          }
       }
    }
    public static void FindSum(int n)
    {
       int sum = 0;
-      for (int i = 0; i < n; n--)
+      if (n < 0)
       {
-         sum = n + sum;
+         for (int i = 0; i > n; n++)
+         {
+            sum = n + sum;
+         }
+         Console.WriteLine(sum);
       }
-      Console.WriteLine(sum);
+      else
+      {
+         for (int i = 0; i < n; n--)
+         {
+            sum = n + sum;
+         }
+         Console.WriteLine(sum);
+      }
+   }
+   public static void FindSumOfEvenNumbers(int n)
+   {
+      int sum = 0;
+      if (n < 0)
+      {
+
+         for (int i = 0; i > n; n++)
+         {
+            int evenNumber = n % 2;
+            if (evenNumber == 0)
+            {
+               sum = n + sum;
+            }
+         }
+         Console.WriteLine(sum);
+      }
+      else
+      {
+         for (int i = 0; i < n; n--)
+         {
+            int evenNumber = n % 2;
+            if (evenNumber == 0)
+            {
+               sum = n + sum;
+            }
+         }
+         Console.WriteLine(sum);
+      }
+   }
+   public static void FindSumOfOddNumbers(int n)
+   {
+      int sum = 0;
+      if (n < 0)
+      {
+
+         for (int i = 0; i > n; n++)
+         {
+            int evenNumber = n % 2;
+            if (evenNumber != 0)
+            {
+               sum = n + sum;
+            }
+         }
+         Console.WriteLine(sum);
+      }
+      else
+      {
+         for (int i = 0; i < n; n--)
+         {
+            int evenNumber = n % 2;
+            if (evenNumber != 0)
+            {
+               sum = n + sum;
+            }
+         }
+         Console.WriteLine(sum);
+      }
+   }
+   public static void OutputRightTriangle(int n)
+   {
+      if (n < 0)
+      {
+         for (int i = 0; i < -n; i++)
+         {
+            // Console.Write("*");
+            for (int j = -n; j > i; j--)
+            {
+               Console.Write("*");
+            }
+            Console.WriteLine();
+         }
+      }
+      else
+      {
+         for (int i = 0; i < n; i++)
+         {
+            Console.Write("*");
+            for (int j = 0; j < i; j++)
+            {
+               Console.Write("*");
+            }
+            Console.WriteLine();
+         }
+      }
    }
 }
