@@ -7,15 +7,15 @@ public class Program
    int n = 1;
    public static void Main(string[] args)
    {
-      Write1ThroughN_While(-1);
-      Write1ThroughN_For(-1);
-      WriteNThrough1_While(-1);
-      WriteNThrough1_For(-1);
+      Write1ThroughN_While(5);
+      Write1ThroughN_For(5);
+      WriteNThrough1_While(5);
+      WriteNThrough1_For(5);
       WriteEvensThrough100();
-      FindSum(5);
-      FindSumOfEvenNumbers(10);
-      FindSumOfOddNumbers(10);
-      OutputRightTriangle(4);
+      FindSum(1);
+      FindSumOfEvenNumbers(-5);
+      FindSumOfOddNumbers(-5);
+      OutputRightTriangle(6);
    }
    public static void OutOfRangeMessage(int n)
    {
