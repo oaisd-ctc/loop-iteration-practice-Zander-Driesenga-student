@@ -12,8 +12,8 @@ public class Program
       WriteNThrough1_For(0);
       WriteEvensThrough100();
       FindSum(100);
-      FindSumOfEvenNumbers(25);
-      FindSumOfOddNumbers(25);
+      FindSumOfEvenNumbers(-25);
+      FindSumOfOddNumbers(-25);
       OutputRightTriangle(0);
    }
    public static void OutOfRangeMessage(int n)
