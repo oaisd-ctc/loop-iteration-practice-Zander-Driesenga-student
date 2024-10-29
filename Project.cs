@@ -4,18 +4,17 @@ using System;
 public class Program
 
 {
-   int n = 1;
    public static void Main(string[] args)
    {
-      Write1ThroughN_While(5);
-      Write1ThroughN_For(5);
-      WriteNThrough1_While(5);
-      WriteNThrough1_For(5);
+      Write1ThroughN_While(0);
+      Write1ThroughN_For(0);
+      WriteNThrough1_While(0);
+      WriteNThrough1_For(0);
       WriteEvensThrough100();
-      FindSum(1);
-      FindSumOfEvenNumbers(-5);
-      FindSumOfOddNumbers(-5);
-      OutputRightTriangle(6);
+      FindSum(-3);
+      FindSumOfEvenNumbers(2);
+      FindSumOfOddNumbers(1);
+      OutputRightTriangle(-4);
    }
    public static void OutOfRangeMessage(int n)
    {
