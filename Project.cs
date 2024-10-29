@@ -12,7 +12,7 @@ public class Program
       WriteNThrough1_For(0);
       WriteEvensThrough100();
       FindSum(100);
-      FindSumOfEvenNumbers(0);
+      FindSumOfEvenNumbers(1);
       FindSumOfOddNumbers(2);
       OutputRightTriangle(-6);
    }
